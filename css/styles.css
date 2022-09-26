@@ -13,6 +13,7 @@ footer {
         position: fixed;
         bottom: 0;
         width: 100%;
+       
 
     
 }
@@ -135,6 +136,7 @@ body {
   scroll-snap-align: center;
 }
 
+
 .slide a {
   background: none;
   border: none;
@@ -202,6 +204,9 @@ pointer-events: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 150px;
+
+
 }
 
 .card {
@@ -210,6 +215,7 @@ pointer-events: none;
   max-width: 250px;
   max-height: 350px;
   box-shadow: 0 40px 60px -6px black;
+
 }
 
 .card-title {
@@ -248,7 +254,7 @@ pointer-events: none;
   height: 100%;
 }
 
-.yeyeye {
+.yeyeye {                       /*<----------------fix this */
   font-size: 2.8rem;
   color: #fff;
   margin: 40px 0 20px 0;
