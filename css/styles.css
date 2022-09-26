@@ -86,48 +86,50 @@ body {
   
 }
 
-.flameholder {
-  text-align: center;
+.flameholder{
+  display:flex;
+justify-content:center;
+align-items:center;
 }
 
 .flame{
-	width:150px;
-	height:150px;
-	background:linear-gradient(-45deg, red, orange);
-	border-radius: 75px 75px 0px 75px;
-	transform:rotate(-135deg);
-	animation:.1s flame infinite;
-	filter:blur(10px);
-	position:relative;
-	box-shadow:17px 20px 90px #700;
-	border:45px solid black;
-	border-left-width:25px;
-	border-top-width:25px;
-	
-	&:after,
-	&:before{
-		content:'';
-		width:50px;
-		height:50px;
-		display:block;
-		position:absolute;
-		background:linear-gradient(-45deg 
-    red,
-    orange);
-
-		transform:scale(.8) rotate(20deg);
+width:150px;
+height:150px;
+background:linear-gradient(-45deg, #F0A641 , #FFFF00, #FFFFFF);
+border-radius: 150px 150px 0px 150px;
+transform:rotate(-135deg);
+animation:.1s flame infinite;
+filter:blur(10px);
+position:fixed;
+box-shadow:17px 20px 90px #700;
+border:45px solid #DE461A;
+border-left-width:25px;
+border-top-width:25px;
+  bottom: 6vh;
 
 
-	}
-	&:before{
-		top:0;
-		animation-duration:.09s;
-		transform:scale(.9) rotate(-15deg) translate(10px, 0px);
-	}
+&:after,
+&:before{
+  content:'';
+  width: 100px;
+  height: 100px;
+  display:block;
+  position:absolute;
+  background:linear-gradient(-45deg, red, orange);
+  animation:.2s flame infinite;
+  transform:scale(.8) rotate(20deg);
+  border-radius: 100px 100px 0px 100px;
+  top: 20px;
+}
+&:before{
+  top:0;
+  animation-duration:.09s;
+  transform:scale(.9) rotate(-15deg) translate(10px, 0px);
+}
 }
 
 @keyframes flame{
-  0% {height:75px; width:75px;}
-  50% {height:70px; width:70px;}
-  100% {height:75px; width:75px;}
+0% {height:60px; width:60px;}
+50% {height:56Px; width:56px;}
+100% {height:60px; width:60px;}
 }
