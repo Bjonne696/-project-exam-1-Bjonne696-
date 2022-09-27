@@ -261,11 +261,35 @@ pointer-events: none;
   text-align: center;
 }
 
+/* about */
+
+.about-container {
+position: relative;
+
+}
+
+.about-image {
+max-width: 50%;
+border: 10px solid #700;
+margin: 0px;
+padding:0px;
+top: 60vh;
+}
+
+.about-text {
+  color:#ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 
 /* flame */
 
 .flameholder{
-  display:flex;
+display:flex;
 justify-content:center;
 align-items:center;
 }
