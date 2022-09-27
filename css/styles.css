@@ -265,15 +265,19 @@ pointer-events: none;
 
 .about-container {
 position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 600px;
 
 }
 
 .about-image {
 max-width: 50%;
 border: 10px solid #700;
-margin: 0px;
-padding:0px;
-top: 60vh;
+opacity: 70%;
+
+
 }
 
 .about-text {
