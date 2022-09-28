@@ -284,8 +284,9 @@ height: 600px;
 
 .about-image {
 max-width: 50%;
-border: 10px solid #700;
+border: 10px solid #4A292B;
 opacity: 70%;
+border-radius: 20px;
 
 
 }
@@ -318,8 +319,8 @@ label {
 
 /* Style the submit button */
 input[type=submit] {
-  background-color: #EFE19A;
-  color: #000000;
+  background-color: #4A292B;
+  color: #EFE19A;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -357,6 +358,32 @@ input[type=submit] {
   clear: both;
 }
 
+#fname {
+  background-color: #EFE19A;
+  opacity: 85%;
+  color: #4A292B;
+}
+
+#lname {
+  background-color: #EFE19A;
+  opacity: 85%;
+  color: #4A292B;
+}
+
+#subject {
+  background-color: #EFE19A;
+  opacity: 85%;
+  color: #4A292B;
+}
+
+#details {
+  background-color: #EFE19A;
+  opacity: 85%;
+  color: #4A292B;
+}
+
+
+
 
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -367,6 +394,32 @@ input[type=submit] {
     margin-right: 0;
   }
 } 
+
+
+/*  selected posts  */
+
+.post-container {
+  position: relative;
+  background-color: #4A292B;
+  padding: 10px 10px 50px 10px;
+  margin: auto;
+  border-radius: 20px;
+  max-width: 60%;
+  margin-top: 30px;
+  
+}
+
+.post-heading {
+  background-color: #E6A871;
+  padding: 5px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.post-content {
+  background-color: #EFE19A;
+  padding: 5px;
+  border-radius: 0px 0px 20px 20px;
+}
 
 
 /* flame */
