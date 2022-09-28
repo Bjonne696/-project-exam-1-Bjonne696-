@@ -230,8 +230,8 @@ pointer-events: none;
 .card-title {
   display: block;
   text-align: center;
-  color: #fff;
-  background-color: #6184a8;
+  color: #4A292B;
+  background-color: #F2DE79;
   padding: 2%;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
@@ -263,7 +263,7 @@ pointer-events: none;
   height: 100%;
 }
 
-.yeyeye {                       /*<----------------fix this */
+.old-post-heading {
   font-size: 2.8rem;
   color: #fff;
   margin: 40px 0 20px 0;
@@ -273,6 +273,7 @@ pointer-events: none;
 /* about */
 
 .about-container {
+margin-top: 60px;
 position: relative;
 display: flex;
 justify-content: center;
@@ -317,20 +318,22 @@ label {
 
 /* Style the submit button */
 input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #EFE19A;
+  color: #000000;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   float: right;
+  margin-right: 25%;
 }
 
 /* Style the container */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #f2f2f200;
   padding: 20px;
+  margin-top: 80px;
 }
 
 /* Floating column for labels: 25% width */
@@ -343,7 +346,7 @@ input[type=submit] {
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
-  width: 75%;
+  width: 50%;
   margin-top: 6px;
 }
 
@@ -354,11 +357,14 @@ input[type=submit] {
   clear: both;
 }
 
+
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
+    margin-right: 0;
   }
 } 
 
