@@ -449,14 +449,14 @@ border-top-width:25px;
 bottom: 6vh;
 
 
-&:after,
-&:before{
+after {}
+before{
   content:'';
   width: 100px;
   height: 100px;
   display:block;
   position:absolute;
-  background:linear-gradient(-45deg, red, orange);
+  background:linear-gradient(-45deg, #F0A641 , #FFFF00, #FFFFFF);
   animation:.2s flame infinite;
   transform:scale(.8) rotate(20deg);
   border-radius: 100px 100px 0px 100px;
@@ -471,6 +471,6 @@ bottom: 6vh;
 
 @keyframes flame{
 0% {height:60px; width:60px;}
-50% {height:56Px; width:56px;}
+50% {height:56px; width:56px;}
 100% {height:60px; width:60px;}
 }
