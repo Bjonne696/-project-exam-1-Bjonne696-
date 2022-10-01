@@ -13,14 +13,13 @@ async function getPosts(url){
 }
 
 function createPost(post){
-    // var StrippedString = post.content.rendered.replace(/<p>*<\/p>/g, "");
-    // const decodedPost= JSON.parse(StrippedString);
-    // console.log(post);
+
     const createdPost=`
     <div class="card">
     <div class="card-title"><h2>${post.title.rendered}</h2>
-    <img src="${post._embedded?.["wp:featuredmedia"][0].source_url}" alt="${post._embedded?.["wp:featuredmedia"][0].alt_text}" /<h2>${post.title.rendered}</h2>
-              ${post.content.rendered}
+     <img src="${post._embedded?.["wp:featuredmedia"][0].source_url}" alt="${post._embedded?.["wp:featuredmedia"][0].alt_text}" />
+    ${post.content.rendered}
+    <a href="selected-post.html?id=${post.id}"></a>
     </div>    
     </div>
     `
@@ -28,8 +27,8 @@ function createPost(post){
   
   
    
-     //console.log(StrippedString);
-     // console.log(createdPost);
+
+console.log(createdPost);
     return createdPost;
 
 
