@@ -445,8 +445,8 @@ align-items:center;
   display: flex;
   align-items:center;
   bottom: 14vh;
-	width:150px;
-	height:150px;
+	width:114px;
+	height:114px;
 	background:linear-gradient(-45deg, #F0A641 , #FFFF00, #FFFFFF);
 	border-radius: 150px 150px 0px 150px;
 	transform:rotate(-135deg);
@@ -463,8 +463,8 @@ align-items:center;
 	&:after,
 	&:before{
 		content:'';
-		width: 100px;
-		height: 100px;
+		width: 75px;
+		height: 75px;
 		display:block;
 		position:absolute;
 		background:linear-gradient(-45deg, red, orange);
