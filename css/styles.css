@@ -18,6 +18,27 @@ footer {
     
 }
 
+.heading-container {
+  position: relative;
+  text-align: center;
+  color: #EFE19A;
+  
+}
+
+.heading-image {
+margin-top:2%;
+max-width: 50%;  
+}
+
+
+
+.heading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 /* NAV bar */
 
@@ -91,11 +112,12 @@ body {
 
 
 .slider-container {
-  margin-top: 10%;
+
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  padding:0;
 }
 
 .slider {
@@ -104,7 +126,7 @@ body {
   width: 100%;
   max-width: 600px;
   height: 400px;
-  margin: 20px;
+
   text-align: center;
   border-radius: 20px;
   position: relative;
@@ -255,17 +277,12 @@ pointer-events: none;
   height: 100%;
 }
 
-.old-post-heading {
-  font-size: 2.8rem;
-  color: #fff;
-  margin: 40px 0 20px 0;
-  text-align: center;
-}
+
 
 /* about */
 
 .about-container {
-margin-top: 60px;
+margin-top:
 position: relative;
 display: flex;
 justify-content: center;
