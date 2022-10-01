@@ -424,9 +424,9 @@ align-items:center;
 
 .flame{
   left: 50%;
-display: flex;
-align-items:center;
-bottom: 14vh;
+  display: flex;
+  align-items:center;
+  bottom: 14vh;
 	width:150px;
 	height:150px;
 	background:linear-gradient(-45deg, #F0A641 , #FFFF00, #FFFFFF);
@@ -439,7 +439,7 @@ bottom: 14vh;
 	border:45px solid #DE461A;
 	border-left-width:25px;
 	border-top-width:25px;
-    bottom: 6vh;
+  bottom: 6vh;
 
 	
 	&:after,
