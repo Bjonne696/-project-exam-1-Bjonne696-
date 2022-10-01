@@ -284,7 +284,6 @@ pointer-events: none;
 /* about */
 
 .about-container {
-margin-top:
 position: relative;
 display: flex;
 justify-content: center;
@@ -481,14 +480,10 @@ align-items:center;
 	}
 }
 
-@keyframes flame{
-  0% {height:60px; width:60px;}
-  50% {height:56Px; width:56px;}
-  100% {height:60px; width:60px;}
-}
+
 
 @keyframes flame{
-0% {height:60px; width:60px;}
-50% {height:56px; width:56px;}
-100% {height:60px; width:60px;}
+0% {height:45px; width:45px;}
+50% {height:42px; width:42px;}
+100% {height:45px; width:45px;}
 }
