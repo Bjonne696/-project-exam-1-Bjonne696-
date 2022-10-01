@@ -28,8 +28,7 @@ function createPost(post){
      //console.log(StrippedString);
      // console.log(createdPost);
     return createdPost;
-    const finalPost = document.querySelector('.p');
-    finalPost.style.display = none; 
+
 
 }
 
