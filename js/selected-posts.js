@@ -14,15 +14,15 @@ async function getPost(postId) {
 
     document.querySelector('.loader').classList.add('hide');
 
-    document.title = postArray.title;
-    document.querySelector('h1').innerHTML = `${postArray.title}`;
+    document.title = postArray.title.rendered;
+    document.querySelector('h1').innerHTML = `${postArray.title.rendered}`;
     document.querySelector(
       '.hero__img'
-    ).style.backgroundImage = `url('${postArray.imageUrl}')`;
+    ).style.backgroundImage = `url('${postArray._embedded?.["wp:featuredmedia"][0].source_url}')`;
     document.querySelector('.cmc').innerHTML = `Converted Mana Cost: ${mtgArray.cmc}`;
-    document.querySelector('.type').innerHTML = `Type: ${mtgArray.type}`;
-    document.querySelector('.rarity').innerHTML = `Rarity: ${mtgArray.rarity}`;
-    document.querySelector('.setName').innerHTML = `Set: ${mtgArray.setName}`;
+    // document.querySelector('.type').innerHTML = `Type: ${mtgArray.type}`;
+    // document.querySelector('.rarity').innerHTML = `Rarity: ${mtgArray.rarity}`;
+    // document.querySelector('.setName').innerHTML = `Set: ${postArray.setName}`;
 } catch (error) {
     document.querySelector('.alert').innerHTML = alertUser(
         'Error occured (Cannot load content)',
@@ -35,4 +35,4 @@ async function getPost(postId) {
 }
 }
 
-getMagic(id);
+getPost(id);
