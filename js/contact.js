@@ -7,12 +7,12 @@ const messageError = document.querySelector('.messageError');
 submit.onclick = function (event) {
   event.preventDefault();
 
-  const firstName = document.querySelector('#firstname').value.trim();
+  const name = document.querySelector('#name').value.trim();
   const subject = document.querySelector('#subject').value.trim();
   const email = document.querySelector('#email').value.trim();
-  const address = document.querySelector('#address').value.trim();
+  const message = document.querySelector('#message').value.trim();
 
-  if (firstName.length > 0) {
+  if (name.length > 5) {
     nameError.classList.add('hide');
     nameError.classList.remove('show');
   } else {
@@ -20,7 +20,7 @@ submit.onclick = function (event) {
     nameError.classList.remove('hide');
   }
 
-  if (subject.length >= 10) {
+  if (subject.length >= 15) {
     subjectError.classList.add('hide');
     subjectError.classList.remove('show');
   } else {
@@ -36,7 +36,7 @@ submit.onclick = function (event) {
     emailError.classList.remove('hide');
   }
 
-  if (text.length > 25) {
+  if (message.length > 25) {
     messageError.classList.add('hide');
     messageError.classList.remove('show');
   } else {

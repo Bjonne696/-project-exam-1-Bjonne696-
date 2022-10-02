@@ -384,9 +384,14 @@ p {
   border-radius: 5px;
 }
 
-#text {
+#message {
 height: 250px;
-width:500px
+width:500px;
+vertical-align: top;
+text-align: left;
+
+
+
 }
 .formError {
   color: red;
