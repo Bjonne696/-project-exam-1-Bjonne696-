@@ -289,7 +289,7 @@ pointer-events: none;
   padding: 2%;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
-  height: 400px;
+  height: 430px;
   width: 200px;
 }
 
@@ -328,16 +328,19 @@ border-radius: 20px;
 }
 
 .about-text {
-  color:#ffffff;
+  color:#F2DE79;;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 2px #000000;
+  font-size: 25px;
 }
 
 @media screen and (max-width: 600px) {
   .about-text {
-    margin-top: 200px;
+    margin-top: 220px;
+    font-size: 15px;
 }
 }
 
