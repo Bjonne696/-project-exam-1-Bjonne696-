@@ -519,6 +519,10 @@ align-items:center;
   animation: spin 2s linear infinite;
 }
 
+.hide {
+  display: none;
+}
+
 .button {
   display: block;
   width: 94%;
