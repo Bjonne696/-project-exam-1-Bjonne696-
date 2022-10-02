@@ -9,7 +9,7 @@ async function getPost(postId) {
         'https://campspace.one/wp-json/wp/v2/posts?per_page=100&_embed' + postId
     );
     const jsonResults = await response.json();
-    const postArray = jsonResults.post;
+    const postArray = jsonResults.results;
     console.log(postArray);
 
     document.querySelector('.loader').classList.add('hide');
@@ -19,10 +19,9 @@ async function getPost(postId) {
     document.querySelector(
       '.hero__img'
     ).style.backgroundImage = `url('${postArray._embedded?.["wp:featuredmedia"][0].source_url}')`;
-    document.querySelector('.cmc').innerHTML = `Converted Mana Cost: ${mtgArray.cmc}`;
-    // document.querySelector('.type').innerHTML = `Type: ${mtgArray.type}`;
-    // document.querySelector('.rarity').innerHTML = `Rarity: ${mtgArray.rarity}`;
-    // document.querySelector('.setName').innerHTML = `Set: ${postArray.setName}`;
+    document.querySelector('.text').innerHTML = `${postArray.excerpt.rendered}`
+
+
 } catch (error) {
     document.querySelector('.alert').innerHTML = alertUser(
         'Error occured (Cannot load content)',

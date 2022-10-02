@@ -9,7 +9,7 @@ main {
   width: 100%;
 }
 
-.cardContainer {
+.boxContainer {
   display: grid;
   grid-template-areas:
     'h1 h1'
@@ -49,7 +49,7 @@ h1 {
   background-position: center;
 }
 
-.card__right {
+.box__right {
   grid-area: card__right;
   width: 50%;
   height: 450px;
