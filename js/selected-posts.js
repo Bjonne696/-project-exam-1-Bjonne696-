@@ -6,7 +6,7 @@ async function getPost(postId) {
   try {
     console.log(postId);
     const response = await fetch(
-        'https://campspace.one/wp-json/wp/v2/posts?per_page=100&_embed' + postId
+        'https://campspace.one/wp-json/wp/v2/posts' + postId_embed
     );
     const jsonResults = await response.json();
     const postArray = jsonResults.results;

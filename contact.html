@@ -41,49 +41,31 @@
     </header>
     
     <main>
-      <div class="heading-container">
-        <img class="heading-image" src="images/heading-sign.png" alt="">
-        <div class="heading-text"><h1>Contact Form</h1></div>
-        </div>
-        <div class="container">
-            <form action="action_page.php">
-              <div class="row">
-                <div class="col-25">
-                  <label for="fname">First Name</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="lname">Last Name</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="subject">Subject</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="subject" name="subject" placeholder="Subject here..">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="details">Details</label>
-                </div>
-                <div class="col-75">
-                  <textarea id="details" name="details" placeholder="Write something.." style="height:200px"></textarea>
-                </div>
-              </div>
-              <div class="row">
-                <input type="submit" value="Submit">
-              </div>
-            </form>
-          </div> 
+      <div class="headerText">
+        <h1>Magic The Gathering</h1>
+        <h2>Sign up and get 20 Magic cards for free!</h2>
+    </div>
+    <div class="form-container">
+    <form>
+        <label for="firstname">Firstname</label>
+        <input type="text" name="firstname" id="firstname">
+        <p class="formError firstNameError">Please enter a firstname</p>
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject">
+        <p class="formError subjectError">Subject must contain 10 characters</p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <p class="formError emailError">Please enter a valid email</p>
+        <label for="address">Address</label> 
+        <input type="text" name="address" id="address">
+        <p class="formError addressError">Address must contain 25 characters</p>
+
+        <button id="submit">Submit</button>
+    </form>
+  </div>
+</main>
+<script src="js/components/alert.js"></script>
+<script src="js/contact.js"></script>
     </main>
     <footer>
 
