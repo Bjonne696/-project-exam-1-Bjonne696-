@@ -329,21 +329,20 @@ border-radius: 20px;
 
 /* contact */
 
-.headerText {
-  text-align: center;
-}
+
 
 .form-container {
-  margin:50px 0px; padding:0px;
+  margin:0px; 
+  padding:0px;
   text-align:center;
-  align:center;
+  
 }
 
 form {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  margin-top: 100px;
+  margin-top: 250px;
   width: fit-content;
   height: fit-content;
   position: absolute;               
@@ -363,7 +362,7 @@ label {
 }
 
 input {
-  width: 250px;
+  width: 500px;
   margin-bottom: 5px;
   height: 25px;
   border-radius: 5px;
@@ -385,6 +384,10 @@ p {
   border-radius: 5px;
 }
 
+#text {
+height: 250px;
+width:500px
+}
 .formError {
   color: red;
   display: none;

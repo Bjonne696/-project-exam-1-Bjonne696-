@@ -41,24 +41,29 @@
     </header>
     
     <main>
-      <div class="headerText">
-        <h1>Magic The Gathering</h1>
-        <h2>Sign up and get 20 Magic cards for free!</h2>
-    </div>
+      <div class="heading-container">
+        <img class="heading-image" src="images/heading-sign.png" alt="">
+        <div class="heading-text"><h1>Contact Form</h1>
+        <h2>SEND US A MESSAGE</h2>
+        </div>
+    </div>  
+
     <div class="form-container">
+
+      
     <form>
-        <label for="firstname">Firstname</label>
-        <input type="text" name="firstname" id="firstname">
-        <p class="formError firstNameError">Please enter a firstname</p>
+        <label for="firstname">Full name</label>
+        <input type="text" name="name" id="name">
+        <p class="formError firstNameError">Please enter a full name</p>
         <label for="subject">Subject</label>
         <input type="text" name="subject" id="subject">
-        <p class="formError subjectError">Subject must contain 10 characters</p>
+        <p class="formError subjectError">Subject must contain 15 characters</p>
         <label for="email">Email</label>
         <input type="email" name="email" id="email">
         <p class="formError emailError">Please enter a valid email</p>
-        <label for="address">Address</label> 
-        <input type="text" name="address" id="address">
-        <p class="formError addressError">Address must contain 25 characters</p>
+        <label for="text">Message</label> 
+        <input type="text" name="address" id="text">
+        <p class="formError messageError">Address must contain 25 characters</p>
 
         <button id="submit">Submit</button>
     </form>
