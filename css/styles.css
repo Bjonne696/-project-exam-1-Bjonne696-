@@ -37,6 +37,12 @@ max-width: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
+}
+@media screen and (max-width: 600px) {
+  .responsive {
+    font-size: 15px;
+}
 }
 
 h1 {
@@ -47,7 +53,8 @@ h1 {
 }
 
 h2 {
-  font-family: becker-gothics-concave, serif
+  font-family: becker-gothics-concave, serif;
+  text-shadow: 2px 2px 2px #000000;
 
 }
 
@@ -55,6 +62,8 @@ p {
   font-family: chaloops, sans-serif;
 
 }
+
+
 
 
 
@@ -327,6 +336,12 @@ border-radius: 20px;
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 600px) {
+  .about-text {
+    margin-top: 200px;
+}
+}
+
 /* contact */
 
 
@@ -367,6 +382,7 @@ input {
   height: 25px;
   border-radius: 5px;
   border: black;
+  background-color: #EFE19A;
 }
 
 p {
@@ -379,8 +395,8 @@ p {
 #submit {
   margin-top: 10px;
   height: 30px;
-  background-color: rgb(30, 255, 0);
-  border: solid 2px rgb(30, 255, 0);
+  background-color: rgb(114, 206, 102);
+  border: solid 2px rgb(114, 206, 102);
   border-radius: 5px;
 }
 
@@ -389,13 +405,18 @@ height: 250px;
 width:500px;
 vertical-align: top;
 text-align: left;
-
-
-
 }
+
+@media screen and (max-width: 600px) {
+  #name,#message,#subject,#email {
+    width: 200px;
+}
+}
+
 .formError {
-  color: red;
+  color: #DE461A;
   display: none;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .hide {
