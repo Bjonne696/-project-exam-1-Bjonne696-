@@ -8,7 +8,10 @@ const postContainer = document.querySelector(".slides");
 function createSlide(post,index) {
   const slide = `
   <div id="slides__${index+1}" class="slide">
-  <span class="slide__text">${post.content.rendered}</span>
+  <div>
+  <span class= "slide__heading"><h1>${post.title.rendered}</h1></span>
+  <span class= "slide__text">${post.content.rendered}</span>
+  </div>
   <a class="slide__prev" href="#slides__${getPrevious(index+1)}" title="Previous"></a>
   <a class="slide__next" href="#slides__${getNext(index-1)}" title="Next"></a>
   </div>
