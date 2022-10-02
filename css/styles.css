@@ -329,75 +329,99 @@ border-radius: 20px;
 
 /* contact */
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+ /* Style inputs, select elements and textareas */
+ input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
-h2 {
-  color: white;
-}
-
-.headerText {
-  text-align: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  margin-top: 100px;
-  width: fit-content;
-  height: fit-content;
-}
-.form_div {
-  background-color: black;
-  padding: 20px;
-  width: 300px;
-}
-
+/* Style the label to display next to the inputs */
 label {
-  font-size: 1.3rem;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
 }
 
-input {
-  width: 250px;
-  margin-bottom: 5px;
-  height: 25px;
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4A292B;
+  color: #EFE19A;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 25%;
+}
+
+/* Style the container */
+.container {
   border-radius: 5px;
-  border: black;
+  background-color: #f2f2f200;
+  padding: 20px;
+  margin-top: 80px;
 }
 
-p {
-  padding: 0px;
-  margin: 0px;
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
 }
 
-#submit {
-  margin-top: 10px;
-  height: 30px;
-  background-color: rgb(30, 255, 0);
-  border: solid 2px rgb(30, 255, 0);
-  border-radius: 5px;
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
 }
 
-.formError {
-  color: red;
-  display: none;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.hide {
-  display: none;
+#fname {
+  background-color: #EFE19A;
+  opacity: 85%;
+  color: #4A292B;
 }
 
-.show {
-  display: block;
+#lname {
+  background-color: #EFE19A;
+  opacity: 85%;
+  color: #4A292B;
+}
+
+#subject {
+  background-color: #EFE19A;
+  opacity: 85%;
+  color: #4A292B;
+}
+
+#details {
+  background-color: #EFE19A;
+  opacity: 85%;
+  color: #4A292B;
 }
 
 
 
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+} 
 
 
 /*  selected posts  */
