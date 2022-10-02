@@ -2,23 +2,23 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get('id');
 
-async function getMagic(cardId) {
+async function getPost(postId) {
   try {
-    console.log(cardId);
+    console.log(postId);
     const response = await fetch(
-        'https://api.magicthegathering.io/v1/cards/' + cardId
+        'https://campspace.one/wp-json/wp/v2/posts?per_page=100&_embed' + postId
     );
     const jsonResults = await response.json();
-    const mtgArray = jsonResults.card;
-    console.log(mtgArray);
+    const postArray = jsonResults.post;
+    console.log(postArray);
 
     document.querySelector('.loader').classList.add('hide');
 
-    document.title = mtgArray.name;
-    document.querySelector('h1').innerHTML = `${mtgArray.name}`;
+    document.title = postArray.title;
+    document.querySelector('h1').innerHTML = `${postArray.title}`;
     document.querySelector(
       '.hero__img'
-    ).style.backgroundImage = `url('${mtgArray.imageUrl}')`;
+    ).style.backgroundImage = `url('${postArray.imageUrl}')`;
     document.querySelector('.cmc').innerHTML = `Converted Mana Cost: ${mtgArray.cmc}`;
     document.querySelector('.type').innerHTML = `Type: ${mtgArray.type}`;
     document.querySelector('.rarity').innerHTML = `Rarity: ${mtgArray.rarity}`;
