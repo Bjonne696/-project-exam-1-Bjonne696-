@@ -1,8 +1,8 @@
 const submit = document.querySelector('#submit');
-const firstNameError = document.querySelector('.firstNameError');
+const nameError = document.querySelector('.nameError');
 const subjectError = document.querySelector('.subjectError');
 const emailError = document.querySelector('.emailError');
-const addressError = document.querySelector('.addressError');
+const messageError = document.querySelector('.messageError');
 
 submit.onclick = function (event) {
   event.preventDefault();
@@ -13,11 +13,11 @@ submit.onclick = function (event) {
   const address = document.querySelector('#address').value.trim();
 
   if (firstName.length > 0) {
-    firstNameError.classList.add('hide');
-    firstNameError.classList.remove('show');
+    nameError.classList.add('hide');
+    nameError.classList.remove('show');
   } else {
-    firstNameError.classList.add('show');
-    firstNameError.classList.remove('hide');
+    nameError.classList.add('show');
+    nameError.classList.remove('hide');
   }
 
   if (subject.length >= 10) {
@@ -36,12 +36,12 @@ submit.onclick = function (event) {
     emailError.classList.remove('hide');
   }
 
-  if (address.length > 25) {
-    addressError.classList.add('hide');
-    addressError.classList.remove('show');
+  if (text.length > 25) {
+    messageError.classList.add('hide');
+    messageError.classList.remove('show');
   } else {
-    addressError.classList.add('show');
-    addressError.classList.remove('hide');
+    messageError.classList.add('show');
+    messageError.classList.remove('hide');
   }
 };
 
