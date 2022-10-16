@@ -1,6 +1,6 @@
 ## Project Exam 1 Bjonne696
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![exam](https://user-images.githubusercontent.com/83508588/196043898-7fe0c4b8-eb58-4aaf-92d6-0a5958bd1873.png)
 
 This was my exam of my first semester.
 
