@@ -31,12 +31,24 @@ async function getPosts(url){
     
 }
 
-function createPost(post){
+/* function createPost(post){
     const createdPost=`
     <div class="card">
     <div class="card-title"><h2>${post.title.rendered}</h2>
      <img src="${post._embedded?.["wp:featuredmedia"][0].source_url}" alt="${post._embedded?.["wp:featuredmedia"][0].alt_text}" />
-     <a class="button" href ="selected-post.html?id=${post.id}">Read More</a>
+     <a class="button" href ="selected-post.html?id=${post.id}">Read More</a> 
+    </div>    
+    </div>
+    `
+console.log(createdPost);
+    return createdPost;
+} */
+
+function createPost(post){
+    const createdPost=`
+    <div class="card">
+    <div class="card-title"><h2>${post.title.rendered}</h2>
+    <p>${post.content.rendered}</p>
     </div>    
     </div>
     `
